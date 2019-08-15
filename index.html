@@ -1,27 +1,122 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns="http://www.w3.org/1999/xhtml"/>
-  <head>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta property="og:image" content="./img/ogBanner.png" />
     <meta property="og:title" content="송금만 해도 현금이 쏟아진다!" />
-    <meta property="og:description" content="총 1억원, 추첨을 통해 카카오 머니를 드립니다!">
-    <meta property="og:type" content="website">
+    <meta property="og:description" content="총 1억원, 추첨을 통해 카카오 머니를 드립니다!" />
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>10주간의 현금스웩 카카오페이</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
-  </head>
-  <body>
-    <div id="kakaoPromotion">
-      <div class="sec_cont">
-        <img src="./img/Top bar@1x.png" alt="10주간의 현금스웩" />
-      </div>
+</head>
 
-      <!--네온타이틀-->
-      <div class="sec_cont neon">
-        <img src="./img/Title_Neon@1x.png" alt="DROP THE MONEY! 송금만해도 현금이 쏟다진다">
-      </div>
+<body>
+    <div id="kakaoPromotion">
+        <div class="sec_cont">
+            <img src="./img/Top bar@1x.png" alt="10주간의 현금스웩" />
+        </div>
+
+        <!--네온타이틀-->
+        <div class="sec_cont neon">
+            <img src="./img/neon_dropThe.png" alt="DROP THE" />
+            <img src="./img/neon_money.png" alt="MONEY" class="m" />
+            <img src="./img/neon_O.png" alt="MONEY" class="o" />
+            <img src="./img/neon_subTitle.png" alt="MONEY" />
+        </div>
+
+        <!-- gMoney -->
+        <div class="sec_cont gMoney">
+            <img src="./img/gMoney.png" alt="G머니" />
+
+            <!-- 총1억원&finger -->
+            <div>
+                <img src="./img/fingerL@1x.png" alt="왼손" class="finger L" />
+                <img src="./img/money@1x.png" alt="총 1억원" class="prize" />
+                <img src="./img/fingerR@1x.png" alt="오른손" class="finger R" />
+            </div>
+        </div>
+
+        <!-- 카카오머니 1주차추첨상금안내 -->
+        <div class="sec_cont reward">
+            <img src="./img/reward.png" alt="1주차 리워드 안내" />
+        </div>
+
+        <!-- sns share -->
+        <div class="sec_cont share">
+            <img src="./img/share_line.png" alt="1주차 리워드 안내" />
+
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <img src="./img/sns_kt.png" alt="카카오톡" />
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="./img/sns_ks.png" alt="카카오스토리" />
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="./img/sns_fb.png" alt="페이스북" />
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="./img/sns_tw.png" alt="트위터" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 배너 -->
+        <div class="sec_cont banner">
+            <img src="./img/bottom_Banner.png" alt="하단 배너" />
+        </div>
+
+        <!-- 유의사항 Caution-->
+        <div class="sec_cont caution">
+            <img src="./img/caution.png" alt="유의사항 안내" />
+        </div>
+
+        <!-- Coin 인트로-->
+        <div class="coin intro">
+            <img src="./img/intro_coin.png" alt="인트로 동전 상단" />
+            <img src="./img/intro_coin2.png" alt="인트로 동전 하단 " />
+        </div>
+        <!-- Coin 스크롤 패럴랙스-->
+        <div class="coin top">
+            <img src="./img/coin_line1.png" alt="동전 1번째라인" />
+            <img src="./img/coin_line2.png" alt="동전 2번째라인" />
+            <img src="./img/coin_line3.png" alt="동전 3번째라인" />
+        </div>
     </div>
-  </body>
+
+    <!-- 팝업, 이벤트 계좌로 1원을 보내봐 -->
+    <div id="popup">
+        <div class="top">
+            <img src="./img/chain.png" alt="체인" class="chain" />
+            <img src="./img/top_text.png" alt="이벤트 계좌로 1원 보내봐" class="text" />
+
+            <a href="javascript:;" class="closeBtn">
+                <img src="./img/Close.png" alt="" />
+            </a>
+        </div>
+        <div class="bottom">
+            <div class="boxWrap">
+                <div class="topBox">
+                    <img src="./img/popup_topBox.png" alt="송금할 1원이 없다면?" />
+                </div>
+                <div class="bottomBox">
+                    <img src="./img/popup_bottomBox.png" alt="송금 이벤트 안내사항 기재" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
