@@ -12,6 +12,9 @@
     <title>10주간의 현금스웩 카카오페이</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="./js/common.js"></script>
 </head>
 
 <body>
@@ -22,14 +25,15 @@
 
         <!--네온타이틀-->
         <div class="sec_cont neon">
-            <img src="./img/neon_dropThe.png" alt="DROP THE" />
-            <img src="./img/neon_money.png" alt="MONEY" class="m" />
-            <img src="./img/neon_O.png" alt="MONEY" class="o" />
-            <img src="./img/neon_subTitle.png" alt="MONEY" />
+            <img src="./img/neon_dropThe.png" alt="DROP THE" class="drop" />
+            <img src="./img/neon_money.png" alt="MONEY" class="money" />
+            <img src="./img/neon_O.png" alt="네온 O" class="o" />
+            <img src="./img/neon_subTitle.png" alt="송금만해도 현금이 쏟아진다" />
+            <img src="./img/spark1.png" alt="spark" class="spark" />
         </div>
 
         <!-- gMoney -->
-        <div class="sec_cont gMoney">
+        <div class=" sec_cont gMoney">
             <img src="./img/gMoney.png" alt="G머니" />
 
             <!-- 총1억원&finger -->
@@ -47,7 +51,8 @@
 
         <!-- sns share -->
         <div class="sec_cont share">
-            <img src="./img/share_line.png" alt="1주차 리워드 안내" />
+            <img src="./img/share_line.png" alt="1주차 리워드 안내" class="light" />
+            <img src="./img/share_line_off.png" alt="1주차 리워드 안내" />
 
             <ul>
                 <li>
@@ -85,14 +90,19 @@
 
         <!-- Coin 인트로-->
         <div class="coin intro">
-            <img src="./img/intro_coin.png" alt="인트로 동전 상단" />
-            <img src="./img/intro_coin2.png" alt="인트로 동전 하단 " />
+            <img src="./img/intro_coin.png" alt="인트로 동전 상단" class="line1" />
+            <img src="./img/intro_coin2.png" alt="인트로 동전 하단" class="line2" />
         </div>
         <!-- Coin 스크롤 패럴랙스-->
         <div class="coin top">
-            <img src="./img/coin_line1.png" alt="동전 1번째라인" />
-            <img src="./img/coin_line2.png" alt="동전 2번째라인" />
-            <img src="./img/coin_line3.png" alt="동전 3번째라인" />
+            <img src="./img/coin_line1.png" alt="동전 1번째라인" class="line1" />
+            <img src="./img/coin_line2.png" alt="동전 2번째라인" class="line2" />
+            <img src="./img/coin_line3.png" alt="동전 3번째라인" class="line3" />
+        </div>
+
+        <!-- 참여하기 버튼 -->
+        <div class="mainButton">
+            <img src="./img/mainButton.png" alt="참여하기" />
         </div>
     </div>
 
@@ -110,10 +120,21 @@
             <div class="boxWrap">
                 <div class="topBox">
                     <img src="./img/popup_topBox.png" alt="송금할 1원이 없다면?" />
+
+                    <a href="javascript:;">
+                        <img src="./img/btn_coupon.png" alt="1원쿠폰" />
+                    </a>
                 </div>
                 <div class="bottomBox">
                     <img src="./img/popup_bottomBox.png" alt="송금 이벤트 안내사항 기재" />
+                    <a href="javascript:;">
+                        <img src="./img/update_katalk.png" alt="1원쿠폰" />
+                    </a>
                 </div>
+            </div>
+
+            <div class="mainButton">
+                <img src="./img/popup_MainButton.png" alt="송금하기" />
             </div>
         </div>
     </div>

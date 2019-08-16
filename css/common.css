@@ -24,14 +24,100 @@
 .sec_cont.neon>img {
     position: absolute;
     top: 0;
+    left: 0;
 }
 
 .sec_cont.neon>img:nth-child(1) {
     position: relative;
 }
 
+.sec_cont.neon .drop {
+    -webkit-animation: neonLight 2s infinite;
+    animation: neonLight 2s infinite;
+    -webkit-animation-timing-function: cubic-bezier(.28, .61, .81, .2);
+    animation-timing-function: cubic-bezier(.28, .61, .81, .2)
+}
+
+.sec_cont.neon .money {
+    -webkit-animation: neonLight 2.5s 0.5s infinite;
+    animation: neonLight 2.5s 0.5s infinite;
+}
+
 .sec_cont.neon .o {
-    opacity: 0;
+    animation: neonLight2 5s 2s infinite;
+    -webkit-animation: neonLight2 5s 2s infinite;
+}
+
+@-webkit-keyframes neonLight {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes neonLight {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes neonLight2 {
+    0% {
+        opacity: 0.5;
+    }
+    2% {
+        opacity: 0.8;
+    }
+    4% {
+        opacity: 0.5;
+    }
+    6% {
+        opacity: 0.8;
+    }
+    8% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes neonLight2 {
+    0% {
+        opacity: 0.5;
+    }
+    2% {
+        opacity: 0.8;
+    }
+    4% {
+        opacity: 0.5;
+    }
+    6% {
+        opacity: 0.8;
+    }
+    8% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
 
 
@@ -43,6 +129,12 @@
     position: relative
 }
 
+.gMoney>img {
+    position: relative;
+    animation: gMoney 0.5s infinite;
+    -webkit-animation: gMoney 0.5s infinite;
+}
+
 .gMoney>div {
     position: absolute;
     bottom: 5%;
@@ -52,6 +144,8 @@
 .gMoney .prize {
     width: 37.1%;
     margin-left: 29.8%;
+    animation: gMoneyText 0.5s infinite cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-animation: gMoneyText 0.5s infinite cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
 
 .gMoney .finger {
@@ -62,12 +156,188 @@
     width: 15.5%;
     left: 14%;
     bottom: 0;
+    animation: fingerL 0.5s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    -webkit-animation: fingerL 0.5s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
 }
 
 .gMoney .finger.R {
     width: 16.3%;
     right: 14%;
     bottom: 23.3%;
+    animation: fingerR 0.5s infinite cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-animation: fingerR 0.5s infinite cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+
+@-webkit-keyframes gMoney {
+    0% {
+        top: -1px;
+    }
+    50% {
+        top: 1px;
+    }
+    100% {
+        top: -1px;
+    }
+}
+
+@keyframes gMoney {
+    0% {
+        top: -1px;
+    }
+    50% {
+        top: 1px;
+    }
+    100% {
+        top: -1px;
+    }
+}
+
+@-webkit-keyframes gMoneyText {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+        -webkit-transform: scale(1.07);
+        -moz-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+        -o-transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+@keyframes gMoneyText {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+        -webkit-transform: scale(1.07);
+        -moz-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+        -o-transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes fingerL {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-16deg);
+        -webkit-transform: rotate(-16deg);
+        -moz-transform: rotate(-16deg);
+        -ms-transform: rotate(-16deg);
+        -o-transform: rotate(-16deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}
+
+@keyframes fingerL {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-16deg);
+        -webkit-transform: rotate(-16deg);
+        -moz-transform: rotate(-16deg);
+        -ms-transform: rotate(-16deg);
+        -o-transform: rotate(-16deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes fingerR {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(16deg);
+        -webkit-transform: rotate(16deg);
+        -moz-transform: rotate(16deg);
+        -ms-transform: rotate(16deg);
+        -o-transform: rotate(16deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}
+
+@keyframes fingerR {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(16deg);
+        -webkit-transform: rotate(16deg);
+        -moz-transform: rotate(16deg);
+        -ms-transform: rotate(16deg);
+        -o-transform: rotate(16deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
 }
 
 
@@ -79,19 +349,23 @@
 }
 
 
-/*리워드 안내*/
+/*share*/
 
 .share {
     width: 92.5%;
     margin-left: 3.75%;
     margin-top: 10%;
+    position: relative;
 }
 
+.share .light {
+    position: absolute;
+}
 
-/*share*/
-
-.share {
-    position: relative;
+.share .light.on {
+    animation: lightOn 1s;
+    -webkit-animation: lightOn 1s;
+    opacity: 1;
 }
 
 .share ul {
@@ -99,11 +373,31 @@
     top: 34.7%;
     height: 51%;
     margin-left: 10%;
+    white-space: nowrap;
+    width: 79.2%;
 }
 
 .share ul li {
-    float: left;
+    /* float: left; */
     height: 100%;
+    width: 24%;
+    position: absolute;
+}
+
+.share ul li:nth-child(1) {
+    left: 0;
+}
+
+.share ul li:nth-child(2) {
+    left: 25%;
+}
+
+.share ul li:nth-child(3) {
+    left: 50%;
+}
+
+.share ul li:nth-child(4) {
+    left: 75%;
 }
 
 .share ul li a {
@@ -112,6 +406,42 @@
 
 .share ul li a img {
     height: 100%;
+}
+
+@-webkit-keyframes lightOn {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes lightOn {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -126,14 +456,93 @@
   left: 0;
 } */
 
-.coin {
+.coin.intro {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: -100%;
+    transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -ms-transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: top 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.coin.intro img {
+    position: absolute;
+    top: 0;
     width: 100%;
 }
 
-.coin img {
+.coin.intro .line2 {
+    top: -80%;
+}
+
+.coin.intro.on {
+    top: 200%;
+}
+
+.coin.top {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: top 1s 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: top 1s 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: top 1s 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -ms-transition: top 1s 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: top 1s 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.coin.top img {
+    width: 100%;
     position: absolute;
     top: -100%;
+    transition: top 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transition: top 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: top 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -ms-transition: top 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: top 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.coin.top .line2 {
+    width: 73%;
+    margin-left: 13.5%;
+}
+
+.coin.top.on .line1 {
+    top: 9.8%;
+}
+
+.coin.top.on .line2 {
+    top: 20.4%;
+}
+
+.coin.top.on .line3 {
+    top: 26.3%;
+}
+
+
+/*참여하기 버튼*/
+
+.mainButton {
+    padding-left: 1.6%;
+    position: fixed;
+    width: 96.2%;
+    bottom: 1%;
+    left: 1.9%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.mainButton>img {
     width: 100%;
+}
+
+#popup .bottom .mainButton {
+    position: absolute;
+    bottom: -20%;
 }
 
 
@@ -145,17 +554,17 @@
     height: 100%;
     top: 0;
     left: 0;
-    -webkit-backface-visibility: hidden;
     display: none;
+    background: black;
 }
 
 #popup.on {
-    display: block
+    display: block;
 }
 
 #popup>div {
     width: 100%;
-    height: 50%;
+    height: 60%;
     background-size: cover;
 }
 
@@ -165,12 +574,12 @@
 #popup .top {
     position: absolute;
     background-image: url(../img/popup_topBg.png);
-    top: -100%;
+    top: -60%;
     background-position: center bottom;
 }
 
-#popup.on .top {
-    top: 0%;
+#popup .top.on {
+    top: -10%;
 }
 
 #popup .top .text {
@@ -182,19 +591,19 @@
 
 #popup .top .chain {
     position: absolute;
-    top: -50px;
-    width: 100px;
+    top: 4%;
+    width: 22%;
     left: 5%;
 }
 
 .closeBtn {
     width: 7.6%;
-    min-width: 30px;
+    min-width: 40px;
     max-width: 55px;
     display: block;
     position: absolute;
     right: 5.3%;
-    top: 5.3%;
+    top: 20.3%;
 }
 
 .closeBtn>img {
@@ -212,45 +621,72 @@
 }
 
 #popup.on .bottom {
-    bottom: 0;
+    bottom: -60%;
 }
 
 #popup .bottom .boxWrap {
-    margin-top: 17%;
+    margin-top: 10%;
     width: 78%;
     margin-left: 11%;
 }
 
 #popup .bottom .boxWrap>div {
     width: 100%;
+    position: relative;
 }
 
 #popup .bottom .boxWrap>div>img {
     width: 100%;
 }
 
+#popup .bottom .boxWrap>div>a {
+    position: absolute;
+    display: block;
+}
+
+#popup .bottom .boxWrap>div>a>img {
+    width: 100%
+}
+
+#popup .bottom .boxWrap .topBox>a {
+    width: 19.7%;
+    top: 21%;
+    right: 3%;
+}
+
+#popup .bottom .boxWrap .bottomBox>a {
+    width: 26.9%;
+    bottom: 11%;
+    right: 9%;
+}
+
 #popup .bottom .boxWrap .bottomBox {
     margin-top: 3.4%;
 }
 
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 650px) {
     #popup .top .chain {
         width: 135px;
     }
     #popup .top .text {
-        width: 570px;
-        max-width: 570px;
-        margin-bottom: -220px;
-        bottom: 50%;
+        width: 500px;
+        max-width: 500px;
+        margin-bottom: -190px;
+        bottom: 40%;
         left: 50%;
-        margin-left: -285px;
+        margin-left: -250px;
     }
     #popup .bottom .boxWrap {
         position: absolute;
         max-width: 570px;
-        margin-top: -153.5px;
-        top: 50%;
+        margin-top: 0px;
+        top: 10%;
         left: 50%;
         margin-left: -285px;
+    }
+    #popup .bottom .mainButton {
+        max-width: 600px;
+        left: 50%;
+        margin-left: -300px;
     }
 }
