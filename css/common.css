@@ -48,6 +48,10 @@
     -webkit-animation: neonLight2 5s 2s infinite;
 }
 
+.sec_cont.neon .spark {
+    display: none;
+}
+
 @-webkit-keyframes neonLight {
     0% {
         opacity: 1;
@@ -446,15 +450,6 @@
 
 
 /*coin*/
-
-
-/* .coin{
-  width:100%;
-  height:100%;
-  position: fixed;
-  top:0;
-  left: 0;
-} */
 
 .coin.intro {
     position: fixed;
